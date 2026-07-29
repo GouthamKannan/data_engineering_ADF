@@ -1,0 +1,15 @@
+{
+	"name": "DFDATAENGINEERLEARNING",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3ef81cf3-8b2f-46a9-af16-5a8684797d42",
+		"tenantId": "85076661-bdfc-47ec-afb5-08f12a5d0de9"
+	}
+}
