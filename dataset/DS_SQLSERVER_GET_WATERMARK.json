@@ -1,5 +1,5 @@
 {
-	"name": "DS_SQLSERVER_RETAIL_DW",
+	"name": "DS_SQLSERVER_GET_WATERMARK",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SQLSERVER_RETAIL_DW",
