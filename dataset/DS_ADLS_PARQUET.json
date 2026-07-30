@@ -22,7 +22,8 @@
 				"folderPath": {
 					"value": "@concat(dataset().TableName,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
 					"type": "Expression"
-				}
+				},
+				"fileSystem": "adfmigration"
 			},
 			"compressionCodec": "snappy"
 		},
