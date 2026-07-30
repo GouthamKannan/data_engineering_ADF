@@ -119,9 +119,34 @@
 							"outputs": [
 								{
 									"referenceName": "DS_ADLS_PARQUET",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"TableName": {
+											"value": "@pipeline().parameters.TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
+						},
+						{
+							"name": "Update_watermark_table",
+							"type": "ExecutePipeline",
+							"dependsOn": [
+								{
+									"activity": "COPY_SQL_TO_PARQUET",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"waitOnCompletion": true
+							}
 						}
 					]
 				}
