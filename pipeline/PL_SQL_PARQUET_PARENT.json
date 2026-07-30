@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "LKUP_SQLTABLE_WATERMARK",
+				"description": "",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -48,6 +49,7 @@
 						"value": "@activity('LKUP_SQLTABLE_WATERMARK').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Exec child PL_incremental",
